@@ -10,6 +10,9 @@ public class RoadManager : MonoBehaviour
         Vector3 pos = this.currentRoad.position;
         pos.y += this.roadOffset;
         Transform newRoad = Instantiate(this.currentRoad, pos, Quaternion.identity);
+        newRoad.name = this.currentRoad.name;
+        newRoad.parent = transform;
         this.currentRoad = newRoad;
+
     }
 }
