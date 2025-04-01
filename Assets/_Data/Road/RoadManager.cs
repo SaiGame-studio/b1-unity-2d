@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RoadManager : MonoBehaviour
 {
-    [SerializeField] protected Transform roadPrefab;
+    [SerializeField] protected Transform currentRoad;
 
     public void CreateRoad()
     {
