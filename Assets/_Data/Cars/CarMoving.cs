@@ -6,8 +6,8 @@ public class CarMoving : MonoBehaviour
     [SerializeField] protected float speed = 0f;
     [SerializeField] protected float speedMin = 0.5f;
     [SerializeField] protected float speedMax = 27f;
-    [SerializeField] protected float speedUp = 0.05f;
-    [SerializeField] protected float speedDown = 0.1f;
+    [SerializeField] protected float speedUp = 0.2f;
+    [SerializeField] protected float speedDown = 0.4f;
 
     private void Update()
     {
