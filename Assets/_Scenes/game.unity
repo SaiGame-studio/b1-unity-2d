@@ -370,9 +370,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d2757f8ced83f43b35e15d7f36859c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputManager: {fileID: 1877039512}
   speed: 0
   speedMax: 27
   speedUp: 0.05
+  speedDown: 0.1
 --- !u!1 &930233832
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2b60ec5a335ac459c98354818bfd2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputVertical: 0
+  inputHorizontal: 0
 --- !u!1 &1920839883
 GameObject:
   m_ObjectHideFlags: 0
