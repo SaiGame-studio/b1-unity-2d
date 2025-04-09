@@ -32,7 +32,7 @@ public class CarMoving : MonoBehaviour
     {
         this.SpeedVerticalUp();
         this.SpeedHorizontalUp();
-        this.KeepCarInRoad();
+        this.KeepCarOnRoad();
     }
 
     protected virtual void Moving()
@@ -75,7 +75,7 @@ public class CarMoving : MonoBehaviour
         if (this.speedHorizontal < this.speedHorMin) this.speedHorizontal = this.speedHorMin;
     }
 
-    protected virtual void KeepCarInRoad()
+    protected virtual void KeepCarOnRoad()
     {
         Vector3 carPosition = transform.parent.position;
 
