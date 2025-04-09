@@ -376,6 +376,14 @@ MonoBehaviour:
   speedMax: 27
   speedUp: 0.2
   speedDown: 0.4
+  speedHorizontal: 0
+  speedHorMin: 0.1
+  speedHorMax: 5
+  speedHorUp: 0.1
+  speedHorDown: 0.4
+  leftLimit: -3
+  rightLimit: 3
+  roadPumping: 0.1
 --- !u!1 &930233832
 GameObject:
   m_ObjectHideFlags: 0

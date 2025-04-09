@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CarMoving : MonoBehaviour
+public class CarMoving : SaiBehaviour
 {
     [SerializeField] protected InputManager inputManager;
 
@@ -32,7 +32,20 @@ public class CarMoving : MonoBehaviour
     {
         this.SpeedVerticalUp();
         this.SpeedHorizontalUp();
-        this.KeepCarInRoad();
+        this.KeepCarOnRoad();
+    }
+
+    protected override void LoadComponents()
+    {
+        base.LoadComponents();
+        this.LoadInputManager();
+    }
+
+    protected virtual void LoadInputManager()
+    {
+        if (this.inputManager != null) return;
+        this.inputManager = GameObject.Find("InputManager").GetComponent<InputManager>();
+        Debug.LogWarning(transform.name + ": LoadInputManager", gameObject);
     }
 
     protected virtual void Moving()
@@ -75,7 +88,7 @@ public class CarMoving : MonoBehaviour
         if (this.speedHorizontal < this.speedHorMin) this.speedHorizontal = this.speedHorMin;
     }
 
-    protected virtual void KeepCarInRoad()
+    protected virtual void KeepCarOnRoad()
     {
         Vector3 carPosition = transform.parent.position;
 
