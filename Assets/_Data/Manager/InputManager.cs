@@ -6,6 +6,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] protected float inputHorizontal = 0;
 
     public float InputVertical => inputVertical;
+    public float InputHorizontal => inputHorizontal;
 
     void Update()
     {
