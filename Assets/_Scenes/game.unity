@@ -372,9 +372,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputManager: {fileID: 1877039512}
   speed: 0
+  speedMin: 0.5
   speedMax: 27
-  speedUp: 0.05
-  speedDown: 0.1
+  speedUp: 0.2
+  speedDown: 0.4
 --- !u!1 &930233832
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +551,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9, y: 5}
+  m_Size: {x: 27, y: 5}
   m_EdgeRadius: 0
 --- !u!1 &1646550340
 GameObject:
